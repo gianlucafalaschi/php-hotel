@@ -81,11 +81,11 @@ Dopo aggiungete Bootstrap e mostrate le informazioni con una tabella. -->
   </tr>
   <?php foreach($hotels as $hotel) { ?>
     <tr>
-        <td> [nome hotel]</td>
-        <td> [descrizione hotel]</td>
-        <td> [parcheggio hotel]</td>
-        <td> [voto hotel]</td>
-        <td> [distanza dal centro hotel]</td>
+        <td><?php echo $hotel['name'] ?></td>
+        <td><?php echo $hotel['description'] ?></td>
+        <td><?php echo $hotel['parking'] ?></td>
+        <td><?php echo $hotel['vote'] ?></td>
+        <td><?php echo $hotel['distance_to_center'] ?></td>
     </tr>
   <?php } ?>  
   
