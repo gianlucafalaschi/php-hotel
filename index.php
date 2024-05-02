@@ -73,14 +73,17 @@ Dopo aggiungete Bootstrap e mostrate le informazioni con una tabella. -->
     
 
   <tr>
-    <th>Name</th>
+    <th>[nome della chiave]</th>
     <th>Description</th>
     <th>Parking</th>
     <th>Vote</th>
     <th>Distance to center</th>
   </tr>
+  <!-- per ogni array nell'insieme di arrays $hotels 
+    stampa a pagina una row della tabella -->
   <?php foreach($hotels as $hotel) { ?>
     <tr>
+        <!-- per ogni singolo array stampa la key specificata -->
         <td><?php echo $hotel['name'] ?></td>
         <td><?php echo $hotel['description'] ?></td>
         <td><?php echo $hotel['parking'] ?></td>
