@@ -40,17 +40,10 @@
 
     ];
 
-    // var_dump($hotels);
-    // /* var_dump($hotels[1]['name']);
-    // var_dump(array_keys($hotels)); */
-    // foreach($hotels as $hotel) {
-    //     var_dump($hotel['name']);
-    // };
-    
-    // foreach($hotel as $key => $value) {
-    //     var_dump($key);
-    // }
-    // var_dump(array_keys($hotels[1]));
+   /*  array che contiene tutte le keys della'array[0] (sono uguali per 
+   tutti gli array) */
+    $hotelKeys = array_keys($hotels[0]);
+
 ?>
 
 <!-- Stampare tutti i nostri hotel con tutti i dati disponibili.
@@ -73,14 +66,11 @@ Dopo aggiungete Bootstrap e mostrate le informazioni con una tabella. -->
     
 
   <tr>
-    <?php foreach($hotels as $key => $value) { ?>
+    <!-- per ogni elemento dell'array $hotelKeys (contiene le keys del primo array)  -->
+    <?php foreach ($hotelKeys as $key) { ?>
+        <!-- stampo il valore dell'elemento -->
         <th><?php echo $key ?></th>
     <?php } ?>
-    <th>[nome della chiave]</th>
-    <th>Description</th>
-    <th>Parking</th>
-    <th>Vote</th>
-    <th>Distance to center</th>
   </tr>
   <!-- per ogni array nell'insieme di arrays $hotels 
     stampa a pagina una row della tabella -->
