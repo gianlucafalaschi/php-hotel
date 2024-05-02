@@ -70,6 +70,8 @@ Dopo aggiungete Bootstrap e mostrate le informazioni con una tabella. -->
 </head>
 <body>
 <table>
+    
+
   <tr>
     <th>Name</th>
     <th>Description</th>
