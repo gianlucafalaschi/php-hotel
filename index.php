@@ -81,7 +81,9 @@ Dopo aggiungete Bootstrap e mostrate le informazioni con una tabella. -->
                 <!-- per ogni singolo array stampa la key specificata -->
                 <td><?php echo $hotel['name'] ?></td>
                 <td><?php echo $hotel['description'] ?></td>
-                <td><?php echo $hotel['parking'] ?></td>
+                <!-- se il valore di $hotel['parking'] e' vero stampo Si,
+                altrimenti stampo No  -->
+                <td><?php echo $hotel['parking'] ? 'Si' : 'No' ?></td>
                 <td><?php echo $hotel['vote'] ?></td>
                 <td><?php echo $hotel['distance_to_center'] ?></td>
             </tr>
