@@ -85,7 +85,7 @@ Dopo aggiungete Bootstrap e mostrate le informazioni con una tabella. -->
                 altrimenti stampo No  -->
                 <td><?php echo $hotel['parking'] ? 'Si' : 'No' ?></td>
                 <td><?php echo $hotel['vote'] ?></td>
-                <td><?php echo $hotel['distance_to_center'] ?></td>
+                <td><?php echo $hotel['distance_to_center'] .' Km' ?></td>
             </tr>
         <?php } ?> 
     </tbody>  
