@@ -40,6 +40,17 @@
 
     ];
 
+    // var_dump($hotels);
+    // /* var_dump($hotels[1]['name']);
+    // var_dump(array_keys($hotels)); */
+    // foreach($hotels as $hotel) {
+    //     var_dump($hotel['name']);
+    // };
+    
+    // foreach($hotel as $key => $value) {
+    //     var_dump($key);
+    // }
+    // var_dump(array_keys($hotels[1]));
 ?>
 
 <!-- Stampare tutti i nostri hotel con tutti i dati disponibili.
@@ -62,10 +73,23 @@ Dopo aggiungete Bootstrap e mostrate le informazioni con una tabella. -->
   <tr>
     <th>Name</th>
     <th>Description</th>
+    <th>Parking</th>
+    <th>Vote</th>
+    <th>Distance to center</th>
   </tr>
   <tr>
-    <td>Alfreds Futterkiste</td>
-    <td>Maria Anders</td>
+    <td> [nome hotel]</td>
+    <td> [descrizione hotel]</td>
+    <td> [parcheggio hotel]</td>
+    <td> [voto hotel]</td>
+    <td> [distanza dal centro hotel]</td>
+  </tr>
+  <tr>
+    <td> [nome hotel]</td>
+    <td> [descrizione hotel]</td>
+    <td> [parcheggio hotel]</td>
+    <td> [voto hotel]</td>
+    <td> [distanza dal centro hotel]</td>
   </tr>
 </table>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
