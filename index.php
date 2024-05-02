@@ -57,34 +57,36 @@ Dopo aggiungete Bootstrap e mostrate le informazioni con una tabella. -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!--/ Bootstrap -->
     <title>PHP Hotel</title>
 </head>
 <body>
-<table>
-    
+<table class="table table-hover table-striped">
+    <thead>
+        <tr>
+        <!-- per ogni elemento dell'array $hotelKeys (contiene le keys del primo array)  -->
+        <?php foreach ($hotelKeys as $key) { ?>
+            <!-- stampo il valore dell'elemento -->
+            <th><?php echo $key ?></th>
+        <?php } ?>
+        </tr>
+    </thead>
 
-  <tr>
-    <!-- per ogni elemento dell'array $hotelKeys (contiene le keys del primo array)  -->
-    <?php foreach ($hotelKeys as $key) { ?>
-        <!-- stampo il valore dell'elemento -->
-        <th><?php echo $key ?></th>
-    <?php } ?>
-  </tr>
-  <!-- per ogni array nell'insieme di arrays $hotels 
-    stampa a pagina una row della tabella -->
-  <?php foreach($hotels as $hotel) { ?>
-    <tr>
-        <!-- per ogni singolo array stampa la key specificata -->
-        <td><?php echo $hotel['name'] ?></td>
-        <td><?php echo $hotel['description'] ?></td>
-        <td><?php echo $hotel['parking'] ?></td>
-        <td><?php echo $hotel['vote'] ?></td>
-        <td><?php echo $hotel['distance_to_center'] ?></td>
-    </tr>
-  <?php } ?>  
-  
+    <tbody>
+        <!-- per ogni array nell'insieme di arrays $hotels 
+        stampa a pagina una row della tabella -->
+        <?php foreach($hotels as $hotel) { ?>
+            <tr>
+                <!-- per ogni singolo array stampa la key specificata -->
+                <td><?php echo $hotel['name'] ?></td>
+                <td><?php echo $hotel['description'] ?></td>
+                <td><?php echo $hotel['parking'] ?></td>
+                <td><?php echo $hotel['vote'] ?></td>
+                <td><?php echo $hotel['distance_to_center'] ?></td>
+            </tr>
+        <?php } ?> 
+    </tbody>  
 
 </table>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
