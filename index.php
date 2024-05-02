@@ -73,6 +73,9 @@ Dopo aggiungete Bootstrap e mostrate le informazioni con una tabella. -->
     
 
   <tr>
+    <?php foreach($hotels as $key => $value) { ?>
+        <th><?php echo $key ?></th>
+    <?php } ?>
     <th>[nome della chiave]</th>
     <th>Description</th>
     <th>Parking</th>
